@@ -308,6 +308,7 @@ CMakeFiles/MyProject.dir/src/game.cpp.o: /home/biotic/ConwaysGameOfLife/MyProjec
 
 CMakeFiles/MyProject.dir/src/main.cpp.o: /home/biotic/ConwaysGameOfLife/MyProject/src/main.cpp \
   /home/biotic/ConwaysGameOfLife/MyProject/include/Header.hpp \
+  /home/biotic/ConwaysGameOfLife/MyProject/src/game.cpp \
   /usr/include/SFML/Config.hpp \
   /usr/include/SFML/Graphics.hpp \
   /usr/include/SFML/Graphics/BlendMode.hpp \
