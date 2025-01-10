@@ -1,0 +1,30 @@
+Alright, so first a formost, the rules of Conways Game of Life:
+
+In the Game of Life each grid cell can have either one of two states: dead or alive. 
+The Game of Life is controlled by four simple rules which are applied to each grid cell in the simulation domain:
+
+1. A live cell dies if it has fewer than two live neighbors.
+2. A live cell with two or three live neighbors lives on to the next generation.
+3. A live cell with more than three live neighbors dies.
+4. A dead cell will be brought back to live if it has exactly three live neighbors.
+
+How it will be implemented:
+
+For now, im thinking of going with the route of making a 2d array, of either 1920x1080 (or that divided by 4) as a
+code representation of the game of life. Updating with each "tic" the 2d array will change based on the 
+4 rules of Conways. This, in turn will then update my SFML visual window with the 2d arrays current state.
+For example, if there are a few tiles "alive" in the top left hand corner that frame, SFML will see that,
+and set the corresponding tile objects to being "alive". if those tiles change, then SFML will change their state
+to "dead", instead. With a texture change as well. 
+
+For the SFML implementation, I think I am going to have two classes. GRID, witch represents the full (1920x1080) pixel grid
+on witch the tiles can grow. The reason I may divide that number by 4, is if I go with making each tile 1 pixel large, not only
+will it lag the program somewhat (i think) but they will be incredibly small, as well. So ideally I can change tile size whenever I wish,
+or just hardcode in a set grid "size". if this size is 4, then each Tile would instead take up 4 pixels of space, instead of 1! 1920x1080 would
+be assuming these tiles only took up 1 pixel, but If i wanted them to be larger id make the grid 1920/4 x 1080/4, and make each tile on a "pixel"
+of that larger grid. this once more adds a new choice.
+
+1. change size of tiles themselves
+2. change amount of pixels a tile takes up
+
+Not sure witch of those two I will go with, but for now I think I will start with changing the amount of space a tile uses, rather then its actual size.
