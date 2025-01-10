@@ -1,3 +1,3 @@
-/home/biotic/ConwaysGameOfLife/MyProject/build/CMakeFiles/MyProject.dir
+/home/biotic/ConwaysGameOfLife/MyProject/build/CMakeFiles/Conway.dir
 /home/biotic/ConwaysGameOfLife/MyProject/build/CMakeFiles/edit_cache.dir
 /home/biotic/ConwaysGameOfLife/MyProject/build/CMakeFiles/rebuild_cache.dir
