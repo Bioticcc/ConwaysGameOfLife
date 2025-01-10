@@ -8,6 +8,8 @@
 #include <stdexcept>  
 #include <fstream>
 #include <sstream>
+#include <SFML/Window.hpp>
+#include <SFML/Graphics.hpp>
 
 using std::ifstream;
 using std::ofstream;
